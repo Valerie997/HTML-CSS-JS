@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="wiidth=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>DOCUMENT</title>
+</head>
+<body>
+   <header>
+  <div class="image-container" id="logo">
+    <img src="imágenes/logo.jpg" alt="logo">
+  </div>
+  </header>
+  <section id="hero">
+    <div class="hero-container" id="fondo">
+      <img src="imágenes/fondo.jpg" alt="fondo">    
+      </div> 
+    <div class="information-container">
+      <div class="image-container" id="foto">
+        <img src="imágenes/valerie.jpg" alt="foto valerie">
+      </div>
+      <div class="information">
+        <h1>
+          Valerie Johanna Contreras Bermon 
+        </h1>
+        <span>
+          @valerie
+        </span>
+        <p> Bachiller en el colegio Jaime Garzon|título como zootecnista de la Francisco de Paula Santander| 5 años de experiencia después de mi grado</p>
+      </div>
+    </div>
+  </section>
+    <main>
+      <p>
+         Estoy encantada de poder cuidar a tus amigos peludos. Desde que era pequeña, siempre he tenido una profunda conexión con los animales, y eso me llevó a convertirme en veterinaria. Mi compromiso es brindar el mejor cuidado posible a cada mascota que entra por nuestra puerta, asegurándome de que tanto ellos como sus dueños se sientan cómodos y bien atendidos.
+
+Me esfuerzo por escuchar atentamente las preocupaciones de los dueños, porque entiendo lo importante que son nuestras mascotas para la familia. Siempre busco mantenerme actualizada con los últimos avances en medicina veterinaria para ofrecer diagnósticos precisos y tratamientos efectivos. Lo que más disfruto de mi trabajo es ver cómo, con el cuidado adecuado, nuestras mascotas pueden vivir vidas largas y saludables.
+
+ofrezco una variedad de servicios, desde chequeos de rutina hasta cuidados específicos. También creo firmemente en la importancia de educar a los dueños sobre la salud y el bienestar de sus animales. Estoy aquí para responder cualquier pregunta que tengas y para apoyarte en cada paso del camino. ¡Espero tener la oportunidad de conocer a ti y a tu mascota pronto!
+      </p>
+      <ul class="social-icons">
+         <li>
+           <a href="https://www.euroinnova.com/blog/todo-sobre-la-carrera-de-veterinaria" class="social-icon" id="linkedin"><img src="imágenes/iconos/linkedin.png" alt="linkedin"></a> 
+         </li>
+        <li>
+           <a href="https://postgradoveterinaria.com/curiosidades-animales-datos-mundo/" class="social-icon" id="github"><img src="imágenes/iconos/github.png" alt="github"></a> 
+        </li>
+        <li>
+           <a href="https://madridsalud.es/cuidados-basicos-para-los-animales-de-compania-perros-y-gatos/" class="social-icon" id="twitter"><img src="imágenes/iconos/twitter.png" alt="twitter"></a> 
+        </li>
+      </ul>
+    <div id="visit-counter">
+<p>esta pagina ha sido visitada <span id="contador">0</span>veces</p>
+    </div>
+    </main>
+    <script>
+if (localStorage.getItem('visitas')){
+  var visitas = parseInt(localStorage.getItem('visitas')) + 1;
+  } else {
+  var visitas = 1;
+  }
+
+    localStorage.setItem('visitas',visitas);
+
+    document.getElementById('contador').textContent = visitas;
+    </script>
+</div>
+</body>
+</html>
